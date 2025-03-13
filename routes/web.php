@@ -15,4 +15,6 @@ use App\Http\Controllers\Frontend\SinglePostController;
 */
 
 Route::get('/', [\App\Http\Controllers\Frontend\PostListController::class, 'index']);
+Route::get('/auth', [\App\Http\Controllers\Auth\RegisterController::class, 'create']);
+
 

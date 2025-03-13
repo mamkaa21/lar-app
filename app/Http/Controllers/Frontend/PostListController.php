@@ -6,13 +6,13 @@ use App\Models\Category;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Illuminate\Support\Facades\DB;
+USE Illuminate\View\View;
 class PostListController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-//        $posts = Posts::simplePaginate(5);
-////        $categories = Category::all();
+
         $posts = Post::with('tags')->addSelect(
             [
                 'category_name' => Category::select('title')

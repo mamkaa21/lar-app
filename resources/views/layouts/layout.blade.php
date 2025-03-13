@@ -8,8 +8,8 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="/public/assets/img/favicon.png" rel="icon">
-    <link href="/public/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{asset('assets/img/favicon.png')}}" rel="icon">
+    <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -17,14 +17,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="/public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/public/assets/vendor/bootstrap-icons/bootstrap-icons.css" >
-    <link href="/public/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" >
+    <link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
     <!-- Main CSS File -->
-    <link href="/public/assets/css/main.css" rel="stylesheet">
+    <link href="{{asset('assets/css/main.css')}}" rel="stylesheet">
 
     <!-- =======================================================
     * Template Name: Presento
@@ -49,9 +49,6 @@
             <ul>
                 <li><a href="#hero">Home<br></a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#team">Team</a></li>
                 <li><a href="blog.html" class="active">Blog</a></li>
                 <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                     <ul>
@@ -70,12 +67,11 @@
                         <li><a href="#">Dropdown 4</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <a class="btn-getstarted" href="../../../../../../Users/Student/Downloads/Presento/index.html#about">Get Started</a>
+        <a class="btn-getstarted" href="/auth">Авторизация</a>
 
     </div>
 </header>
@@ -159,7 +155,7 @@
                         <h3 class="widget-title">Recent Posts</h3>
 
                         <div class="post-item">
-                            <img src="/public/assets/img/blog/blog-recent-1.jpg" alt="" class="flex-shrink-0">
+                            <img src="{{asset('assets/img/blog/blog-recent-1.jpg')}}" alt="" class="flex-shrink-0">
                             <div>
                                 <h4><a href="../../../../../../Users/Student/Downloads/Presento/blog-details.html">Nihil blanditiis at in nihil autem</a></h4>
                                 <time datetime="2020-01-01">Jan 1, 2020</time>
@@ -284,17 +280,17 @@
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <!-- Vendor JS Files -->
-<script src=/public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js></script>
-<script src=/public/assets/vendor/php-email-form/validate.js></script>
-<script src=/public/assets/vendor/aos/aos.js></script>
-<script src=/public/assets/vendor/glightbox/js/glightbox.min.js></script>
-<script src=/public/assets/vendor/swiper/swiper-bundle.min.js></script>
-<script src=/public/assets/vendor/purecounter/purecounter_vanilla.js></script>
-<script src=/public/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js></script>
-<script src=/public/assets/vendor/isotope-layout/isotope.pkgd.min.js></script>
+<script src={{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}></script>
+<script src={{asset('assets/vendor/php-email-form/validate.js')}}></script>
+<script src={{asset('assets/vendor/aos/aos.js')}}></script>
+<script src={{asset('assets/vendor/glightbox/js/glightbox.min.js')}}></script>
+<script src={{asset('assets/vendor/swiper/swiper-bundle.min.js')}}></script>
+<script src={{asset('assets/vendor/purecounter/purecounter_vanilla.js')}}></script>
+<script src={{asset('assets/vendor/imagesloaded/imagesloaded.pkgd.min.js')}}></script>
+<script src={{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}></script>
 
 <!-- Main JS File -->
-<script src=/public/assets/js/main.js></script>
+<script src={{asset('assets/js/main.js')}}></script>
 
 </body>
 
